@@ -7,10 +7,14 @@
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "jquery": "^3.1.0",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
     "webpack": "^1.13.1"
   },
   "devDependencies": {},
   "scripts": {
+    "dev": "node ./node_modules/webpack/bin/webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alena Malko",
@@ -18,5 +22,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/alena-ilina/e-basket.git"
-  },
+  }
 }

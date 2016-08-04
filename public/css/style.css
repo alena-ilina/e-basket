@@ -1,0 +1,23 @@
+.page {
+
+}
+
+    .page__wrapper {
+
+    }
+
+    .page__basket {
+
+    }
+
+    .basket {
+
+    }
+
+        .basket__table {
+            border: 1px solid red;
+        }
+
+            .basket__table-title {
+
+            }
