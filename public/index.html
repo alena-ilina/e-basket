@@ -10,8 +10,11 @@
             <section class="page__basket">
                 <section class="basket _js-basket">
                     <section class="basket__wrapper">
+                        <h1 class="basket__title">
+                            Корзина
+                        </h1>
                         <table class="basket__table">
-                            <thead>
+                            <thead class="basket__table-wrapper">
                                 <tr class="basket__table-title">
                                     <td class="basket__table-title-column">
                                         Наименование
@@ -26,13 +29,13 @@
                                         Цена, руб.
                                     </td>
                                     <td class="basket__table-title-column">
-                                        Количесвто
+                                        Количество
                                     </td>
                                     <td class="basket__table-title-column">
                                         Стоимость, руб.
                                     </td>
                                     <td class="basket__table-title-column">
-                                        <a href="#" class="basket__table-title-column-delete">Удалить все</a>
+                                        <a href="#" class="basket__table-title-column-delete-all" data-action="remove-all-items">Удалить все</a>
                                     </td>
                                 </tr>
                             </thead>
@@ -40,6 +43,10 @@
 
                             </tbody>
                         </table>
+                        <div class="basket__footer">
+                            <div class="basket__price _js-basket-price"></div>
+                            <div class="basket__order-button _js-basket-order-button"></div>
+                        </div>
                     </section>
                 </section>
             </section>

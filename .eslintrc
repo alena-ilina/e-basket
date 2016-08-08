@@ -1,9 +1,25 @@
 {
+    "globals": {
+        "jQuery": true
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": true,
+        "es6": true,
+        "mocha": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
     "extends": "google",
     "rules": {
         "indent": [
             2,
-            4
+            4,
+            {
+                SwitchCase: 1
+            }
         ],
         "quotes": [
             2,
@@ -81,17 +97,5 @@
                 "allow": []
             }
         ]
-    },
-    "globals": {
-        "jQuery": true
-    },
-    "env": {
-        "browser": true,
-        "node": true,
-        "commonjs": true,
-        "es6": true
-    },
-    "parserOptions": {
-        "ecmaVersion": 6
     }
 }

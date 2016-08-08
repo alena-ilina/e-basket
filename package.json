@@ -7,15 +7,23 @@
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "bluebird": "^3.4.1",
     "jquery": "^3.1.0",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
     "webpack": "^1.13.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.2.2",
+    "eslint-config-google": "^0.6.0",
+    "mocha": "^3.0.1"
+  },
   "scripts": {
     "dev": "node ./node_modules/webpack/bin/webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/.bin/_mocha ./**/__tests__/index.js",
+    "lint": "eslint ."
   },
   "author": "Alena Malko",
   "license": "MIT",
