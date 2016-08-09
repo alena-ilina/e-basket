@@ -1,9 +1,9 @@
-const libs = require("../../libs");
+const Handlebars = require("handlebars");
 
 /**
- * TotalPrice constructor
- * @param {Object} $container
- * @param {Object} store
+ * Компонент вывода цены по всем товарам
+ * @param {Object} $container Jquery-объект с контейнером для компонента
+ * @param {Object} store      Redux-стор
  */
 function TotalPrice($container, store) {
     this.$container = $container;
@@ -16,25 +16,12 @@ function TotalPrice($container, store) {
 
 TotalPrice.prototype.render = function render(props) {
     const {ui, totalPrice} = props;
+    const context = {ui, totalPrice};
+    const templateString = require("./template");
+    const compileTemplate = Handlebars.compile(templateString);
+    const readyHtml = compileTemplate(context);
 
-    const htmlString = `
-        <div class="price${ui.isLoading ? " _loading" : ""}">
-            <div class="price__discount">
-                Цена <span class="price__discount-wrapper ${totalPrice.discount === 0 ? " _disabled" : ""}"> со
-                    <span class="price__discount-value">скидкой ${totalPrice.discount}%:</span>
-                    </span>
-            </div>
-            <div class="price__value">
-                ${libs.digits(totalPrice.price.toFixed(2))} <span class="price__value-rouble"> </span>
-            </div>
-            <div class="price__priceWithoutDiscount ${totalPrice.discount === 0 ? " _disabled" : ""}">
-                Без скидки ${libs.digits(totalPrice.priceWithoutDiscount.toFixed(2))}
-                <span class="price__priceWithoutDiscount-rouble"> </span>
-            </div>
-        </div>
-    `;
-
-    this.$container[0].innerHTML = htmlString;
+    this.$container[0].innerHTML = readyHtml;
 };
 
 module.exports = TotalPrice;

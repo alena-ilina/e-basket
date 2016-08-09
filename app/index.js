@@ -1,17 +1,19 @@
 const redux = require("redux");
 const createStore = redux.createStore;
 const applyMiddleware = redux.applyMiddleware;
-const logger = require("redux-logger");
 const thunk = require("redux-thunk").default;
 const rootReducer = require("./reducers");
 const $ = require("jquery");
 const state = require("./data");
 
-const appStore = createStore(rootReducer, state, applyMiddleware(logger(), thunk));
+const appStore = createStore(rootReducer, state, applyMiddleware(thunk));
 
 const BasketTable = require("./components/basketTable");
 const TotalPrice = require("./components/totalPrice");
 const OrderButton = require("./components/orderButton");
+const registerHelpers = require("./libs/registerHelpers");
+
+registerHelpers();
 
 /* eslint-disable no-new */
 

@@ -5,18 +5,12 @@ const webpack = require('webpack');
 const cwd = process.cwd();
 const path = require('path');
 
-let outputFilename = 'build';
-
-if (NODE_ENV === 'production') {
-    outputFilename += '.min';
-}
-
 module.exports = {
     entry: './app/index',
     output: {
-        path: path.resolve(`${cwd}/public/js`),
-        publicPath: './public/js/',
-        filename: `${outputFilename}.js`
+        path: path.resolve(`${cwd}/public/scripts`),
+        publicPath: './public/scripts/',
+        filename: `build.js`
     },
     watch: NODE_ENV === 'development',
     watchOptions: {

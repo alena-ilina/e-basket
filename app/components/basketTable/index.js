@@ -1,13 +1,13 @@
 const $ = require("jquery");
+const Handlebars = require("handlebars");
 const basketTableActions = require("../../actionCreator/basketTableActions");
 const totalPriceActions = require("../../actionCreator/totalPriceActions");
 const utils = require("./utils");
-const libs = require("../../libs");
 
 /**
- * BasketTable constructor
- * @param {Object} $container
- * @param {Object} store
+ * Компонент таблицы с товарами (точнее именно тела таблицы)
+ * @param {Object} $container Jquery-объект с контейнером для компонента
+ * @param {Object} store      Redux-стор
  */
 function BasketTable($container, store) {
     this.$container = $container;
@@ -33,57 +33,19 @@ BasketTable.prototype.init = function basketTableInit() {
 
 BasketTable.prototype.render = function render(props) {
     const {itemsList, ui} = props;
+    const context = {itemsList};
 
-    // TODO
     if (ui.isLoading) {
         this.$container.addClass("_loading");
     } else {
         this.$container.removeClass("_loading");
     }
-    // TODO
 
-    /* eslint-disable no-param-reassign */
-    const htmlString = itemsList.reduce((accumulator, item) => {
-        const counterDecrementActivityState = item.count === 0 ? " _disabled" : "";
+    const templateString = require("./template");
+    const compileTemplate = Handlebars.compile(templateString);
+    const readyHtml = compileTemplate(context);
 
-        accumulator += `
-            <tr class="item-row" data-id="${item.id}" id="${item.id}">
-                <td class="item-row__cell">
-                    ${item.title}
-                </td>
-                <td class="item-row__cell">
-                    ${item.size}
-                </td>
-                <td class="item-row__cell">
-                    ${item.weigh}
-                </td>
-                <td class="item-row__cell _type_price">
-                    ${libs.digits(item.price.toFixed(2))}
-                </td>
-                <td class="item-row__cell">
-                    <div class="counter">
-                        <div class="counter__decrement ${counterDecrementActivityState}" data-action="decrement">
-                            -
-                        </div>
-                        <input type="text" value="${item.count}" class="counter__value _js-counter-input"/>
-                        <div class="counter__increment" data-action="increment">
-                            +
-                        </div>
-                    </div>
-                </td>
-                <td class="item-row__cell _type_price">
-                    ${item.totalPrice === 0 ? "—" : libs.digits(item.totalPrice.toFixed(2))}
-                </td>
-                <td class="item-row__cell">
-                    <a href="#" class="item-row__cell-delete-item" data-action="remove-item">Удалить</a>
-                </td>
-            </tr>
-        `;
-        return accumulator;
-    }, "");
-    /* eslint-enable no-param-reassign */
-
-    this.tableBody.innerHTML = htmlString;
+    this.tableBody.innerHTML = readyHtml;
 };
 
 BasketTable.prototype.bind = function bind() {
@@ -114,6 +76,7 @@ BasketTable.prototype.bind = function bind() {
         }
 
         const itemId = $currentTarget.closest(".item-row").data("id");
+
         switch (currentTargetAction) {
             case "remove-item":
                 this.store.dispatch(
@@ -181,7 +144,6 @@ BasketTable.prototype.bind = function bind() {
                 );
 
                 break;
-
             default:
                 break;
         }

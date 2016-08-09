@@ -6,6 +6,8 @@ module.exports = function itemsListReducer(state = [], action) {
             return state.filter(item => item.id !== action.payload.id);
         case "DELETE_ALL_ITEMS_FROM_TABLE":
             return [];
+        case "ORDER_IS_SENT":
+            return [];
         case "INCREMENT_COUNT_VALUE":
             return state.map(item => {
                 if (item.id === action.payload.id) {

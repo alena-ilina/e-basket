@@ -72,42 +72,6 @@ module.exports = {
             count: 2,
             totalPrice: 300
         }
-        // {
-        //     id: 9,
-        //     title: "Товар 3",
-        //     size: "800x1040x495",
-        //     weigh: 66,
-        //     price: 19100,
-        //     count: 1,
-        //     totalPrice: 19100
-        // },
-        // {
-        //     id: 10,
-        //     title: "Товар 1",
-        //     size: "800x1000x495",
-        //     weigh: 35,
-        //     price: 15000,
-        //     count: 1,
-        //     totalPrice: 15000
-        // },
-        // {
-        //     id: 11,
-        //     title: "Товар 2 с длинным названием",
-        //     size: "800x1000x485",
-        //     weigh: 47,
-        //     price: 15500,
-        //     count: 2,
-        //     totalPrice: 31000
-        // },
-        // {
-        //     id: 12,
-        //     title: "Товар 3",
-        //     size: "800x1040x495",
-        //     weigh: 66,
-        //     price: 19100,
-        //     count: 1,
-        //     totalPrice: 19100
-        // }
     ],
     totalPrice: {
         discount: 0,

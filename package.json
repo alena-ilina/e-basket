@@ -8,9 +8,9 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "bluebird": "^3.4.1",
+    "handlebars": "^4.0.5",
     "jquery": "^3.1.0",
     "redux": "^3.5.2",
-    "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
     "webpack": "^1.13.1"
   },
@@ -22,8 +22,9 @@
   },
   "scripts": {
     "dev": "node ./node_modules/webpack/bin/webpack",
+    "prod": "NODE_ENV=production node ./node_modules/webpack/bin/webpack",
     "test": "node ./node_modules/.bin/_mocha ./**/__tests__/index.js",
-    "lint": "eslint ."
+    "lint": "eslint ./app"
   },
   "author": "Alena Malko",
   "license": "MIT",

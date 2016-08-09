@@ -43,7 +43,7 @@ html, body {
             margin: auto;
             width: 66px;
             height: 66px;
-            background: url('../img/preloader.gif') no-repeat;
+            background: url('../images/preloader.gif') no-repeat;
         }
 
         .basket._loading:before,
@@ -204,7 +204,7 @@ html, body {
             font-weight: bold;
         }
 
-    .price__priceWithoutDiscount._disabled {
+    .price__priceWithoutDiscount._hidden {
         display: none;
     }
 
@@ -212,7 +212,7 @@ html, body {
         display: inline-block;
         width: 13px;
         height: 15px;
-        background: url('../img/ruble.svg');
+        background: url('../images/ruble.svg');
     }
 
 .order-button {

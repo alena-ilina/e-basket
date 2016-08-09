@@ -1,0 +1,457 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mrgin",
+				"margin-bottom"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"select",
+				"selectClass"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"met",
+				"meta	Tag"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"test",
+				"test.js"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sublim",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 471.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/a.ilina/Work/learning/e-basket"
+	],
+	"file_history":
+	[
+		"/private/var/folders/l5/kz72dp1d7sq3s258m99q44rh0000gn/T/fz3temp-1/maintyz7p689vl9krv5z5mi.min.css",
+		"/Users/a.ilina/Work/viasan/less/components/tour.less",
+		"/Users/a.ilina/Work/viasan/less/main.less",
+		"/Users/a.ilina/Work/viasan/jade/base/footers.jade",
+		"/Users/a.ilina/Work/viasan/index.html",
+		"/Users/a.ilina/Work/viasan/jade/base/UI/modal_windows/modal-LP.jade",
+		"/Users/a.ilina/Work/viasan/jade/base/UI/block/mentions.jade",
+		"/Users/a.ilina/Work/viasan/jade/tour.jade",
+		"/Users/a.ilina/Work/viasan/less/bootstrap/variables.less",
+		"/Users/a.ilina/Work/viasan/less/components/hotels.less",
+		"/Users/a.ilina/Work/viasan/jade/base/UI/Form/form_green.jade",
+		"/Users/a.ilina/Work/viasan/.gitignore",
+		"/Users/a.ilina/Work/viasan/package.json",
+		"/Users/a.ilina/Work/viasan/gulpfile.js",
+		"/Users/a.ilina/Work/viasan/build/pages/index.html",
+		"/Users/a.ilina/Work/viasan/css/main.css",
+		"/Users/a.ilina/Work/viasan/build/css/main.css",
+		"/Users/a.ilina/Work/viasan/prepros.cfg",
+		"/Users/a.ilina/Work/viasan/jade/base/UI/Form/LP_form.jade",
+		"/Users/a.ilina/Work/viasan/.eslintrc",
+		"/Users/a.ilina/Work/viasan/jade/404.jade",
+		"/Users/a.ilina/Work/viasan/less/bootstrap/glyphicons.less",
+		"/Users/a.ilina/Work/viasan/less/components/sidenav.less",
+		"/Users/a.ilina/Work/viasan/less/components/navbar.less",
+		"/Users/a.ilina/Work/viasan/less/components/mobile.less",
+		"/Users/a.ilina/Work/viasan/less/bootstrap/navs.less",
+		"/Users/a.ilina/Work/viasan/less/bootstrap/grid.less",
+		"/Users/a.ilina/Work/viasan/less/components/flag_big.less",
+		"/Users/a.ilina/Work/viasan/less/description.css",
+		"/Users/a.ilina/Work/garant/project/markup/modules/projects/projects.js",
+		"/Users/a.ilina/Work/garant/project/markup/modules/footer/footer.html",
+		"/Users/a.ilina/Work/garant/project/markup/pages/index.html",
+		"/Users/a.ilina/Work/garant/project/markup/modules/action/action.html",
+		"/Users/a.ilina/Work/garant/project/markup/modules/projects/projects.html",
+		"/Users/a.ilina/Work/garant/project/markup/modules/news/news.less",
+		"/Users/a.ilina/Work/garant/project/markup/modules/news/news.html",
+		"/Users/a.ilina/Work/garant/project/markup/modules/projects/projects.less",
+		"/Users/a.ilina/Work/garant/project/markup/static/less/plugins/jquery.fancybox.css",
+		"/Users/a.ilina/Work/garant/project/markup/modules/directors/directors.less",
+		"/Users/a.ilina/Work/garant/project/markup/modules/directors/directors.html",
+		"/Users/a.ilina/Work/garant/project/markup/modules/about/about.less",
+		"/Users/a.ilina/Work/garant/project/markup/modules/about/about.html",
+		"/Users/a.ilina/Work/test/cityInfo.js",
+		"/Users/a.ilina/Work/test/citySelect.js",
+		"/Users/a.ilina/Work/test/app.js",
+		"/Users/a.ilina/Work/test/test.html",
+		"/Users/a.ilina/Work/:: Вёрстка",
+		"/Users/a.ilina/Work/test/main.js",
+		"/Users/a.ilina/Work/test/test.js",
+		"/Users/a.ilina/Work/test/data.json",
+		"/Users/a.ilina/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/a.ilina/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/a.ilina/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/a.ilina/Library/Application Support/Sublime Text 3/Installed Packages/Material Theme.sublime-package",
+		"/Users/a.ilina/Work/rdm/project/.gitignore",
+		"/Users/a.ilina/Github/custom_number_input/number-input/number-input.css"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"/Users/a.ilina/Work/viasan/less",
+			"/Users/a.ilina/Work/viasan/jade",
+			"/Users/a.ilina/Work/viasan/js",
+			"/Users/a.ilina/Work/viasan/jade",
+			"/Users/a.ilina/Work/viasan/less/components",
+			"/Users/a.ilina/Work/viasan/jade",
+			"/Users/a.ilina/Work/viasan/js",
+			"/Users/a.ilina/Work/viasan/jade",
+			"/Users/a.ilina/Work/viasan/js",
+			"/Users/a.ilina/Work/viasan/jade",
+			"viasan"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".video__wrapper",
+			".fancybox-wrap._kitchen .fancybox-nav,.fancybox-wrap._kitchen .fancybox-next",
+			".fancybox-wrap._kitchen .fancybox-nav, .fancybox-wrap._kitchen .fancybox-next",
+			".fancybox-wrap._kitchen .fancybox-inner",
+			".order-table",
+			".fancybox-menu__info-wrapper",
+			".page__fullpage-section",
+			".order-table__form-title",
+			".order-table__form-title ",
+			"spritetyz7p689vl9krv5z5mi",
+			"sprite",
+			".page__fullpage-section._kitchen",
+			".page__fullpage-section._actions",
+			".page__fullpage-section",
+			"@media",
+			"mobile",
+			"best-Hotel-block",
+			"+cuntry_block",
+			".blockHotels",
+			".hotels_list .blockHotels",
+			"cuntry_block",
+			"tabpanel",
+			"#head_search",
+			"aria-expanded",
+			"')",
+			"sidenav-country",
+			"country_header-form",
+			"mobile",
+			"mobile = true",
+			"sidenav",
+			"margin-bottom: 190px",
+			"tours-seasons",
+			"advert-mini",
+			"tours-seasons",
+			"mentions",
+			".block-stroked",
+			"slider-pro",
+			"#step",
+			"expert-banner",
+			"expert",
+			"banner-expert",
+			"//-",
+			"-2015",
+			"footer-base",
+			"_gaq.push",
+			"form_green",
+			"#head_search .search-city",
+			".mobile #head_search .search-city",
+			"search-select-where-new",
+			"search-select-date-day",
+			"country_header-form",
+			"@screen-tablet",
+			"text",
+			"include base/UI/Form/order_form",
+			"block_green_form",
+			"Заявка ",
+			"Заявка на подбор тура в Австрию",
+			"block_green_form",
+			"0",
+			"cuntry_block",
+			"coun",
+			"block_row",
+			"thumbnails-slider",
+			".mobile",
+			"@screen-tablet",
+			".mobile",
+			"@nav-link-padding",
+			".make-grid",
+			".container",
+			".mobile",
+			".mobile .container",
+			"#request-hotels",
+			"request-hotels",
+			".mobile .container",
+			".tourCart__header",
+			"tourCart__header",
+			"footer",
+			"14",
+			"16",
+			"line"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "e-basket.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"jade/base/ui/modal_windows/modal-lp.jade",
+				"jade/base/UI/modal_windows/modal-LP.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Work/test/test.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
