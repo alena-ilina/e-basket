@@ -8,6 +8,8 @@ Basket for E-shop
 * npm run test – прогон unit-тестов.
 * npm run lint – прогон app через eslint.
 
+Необходимо установить Node.js версии >= 4.x.x
+
 Чтобы просто собрать проект, необходимо поставить npm-зависимости:
 ```bash 
 npm install --production
